@@ -1,0 +1,99 @@
+
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: $fonts;
+}
+
+body{
+    background: $bg-color;
+
+}
+
+main{
+   margin: 5rem;
+   background-image: url("../images/bg-pattern-desktop.svg");
+   box-shadow: .3rem .3rem .5rem .6rem $grey;
+   width: 90%;
+   height: 100%;
+   display: flex;
+//    place-items: center;
+.typo{
+    flex-grow: 1;
+    padding: 9rem;
+
+  .logo{
+      margin-top: -5.5rem;
+  }
+
+  form{
+      display: flex;
+      position: relative;
+
+      input{
+        border: 1px solid $light;
+        padding: 1rem;
+        border-radius: 20px;
+        width: 47rem;
+        height: 4rem;
+
+        &:focus{
+            outline: none;
+        }
+    }
+    button{
+        border: none;
+        background-color: $soft-red;
+        border-radius: 20px;
+        width: 10rem;
+        padding: 1rem;
+        position: absolute;
+        margin-left: 37rem;
+
+        &:focus{
+            outline: none;
+        }
+
+        &:hover{
+            box-shadow: .3rem .3rem .5rem .6rem $light;
+        }
+    }
+
+    .cor{
+        color: lawngreen;
+        display: none;
+        font-size: 1.3rem;
+    }
+
+    .error{
+        color: $light;
+    }
+
+    & img[alt="error"]{
+        position: absolute;
+        height: 20px;
+        right: 24%;
+        top: 15px;
+        display: none;
+        color: $light;
+
+    }
+  }
+  
+
+}
+
+img[alt="image"]{
+    height: 30vh;
+    flex-shrink: 1;
+    flex: 1;
+}
+}

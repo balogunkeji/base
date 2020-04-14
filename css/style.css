@@ -1,0 +1,83 @@
+@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap';
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px;
+  font-family: "Josefin Sans", sans-serif; }
+
+body {
+  background: linear-gradient(135deg, from white, to #fff5f5); }
+
+main {
+  margin: 5rem;
+  background-image: url("../images/bg-pattern-desktop.svg");
+  box-shadow: 0.3rem 0.3rem 0.5rem 0.6rem #e7e7e7;
+  width: 90%;
+  height: 100%;
+  display: flex; }
+  main .typo {
+    flex-grow: 1;
+    padding: 9rem; }
+    main .typo .logo {
+      margin-top: -5.5rem; }
+    main .typo form {
+      display: flex;
+      position: relative; }
+      main .typo form input {
+        border: 1px solid #ce9797;
+        padding: 1rem;
+        border-radius: 20px;
+        width: 47rem;
+        height: 4rem; }
+        main .typo form input:focus {
+          outline: none; }
+      main .typo form button {
+        border: none;
+        background-color: #f96262;
+        border-radius: 20px;
+        width: 10rem;
+        padding: 1rem;
+        position: absolute;
+        margin-left: 37rem; }
+        main .typo form button:focus {
+          outline: none; }
+        main .typo form button:hover {
+          box-shadow: 0.3rem 0.3rem 0.5rem 0.6rem #ce9797; }
+      main .typo form .cor {
+        color: lawngreen;
+        display: none;
+        font-size: 1.3rem; }
+      main .typo form .error {
+        color: #ce9797; }
+      main .typo form img[alt="error"] {
+        position: absolute;
+        height: 20px;
+        right: 24%;
+        top: 15px;
+        display: none;
+        color: #ce9797; }
+  main img[alt="image"] {
+    height: 30vh;
+    flex-shrink: 1;
+    flex: 1; }
+
+.typography {
+  margin-top: 15rem; }
+  .typography h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: .8rem;
+    font-size: 4rem;
+    margin-bottom: 1rem; }
+    .typography h1 span {
+      color: #ce9797; }
+  .typography p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #ce9797;
+    margin-bottom: 2rem; }
