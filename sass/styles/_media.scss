@@ -1,35 +1,80 @@
-// // tablet
-// @media(max-width: 800px){
-//     main{
-//         width: 80%;
-//         height: fit-content;
-//         .typo{
-//             padding: 7rem;
-//            .logo{
-//                margin-top: -3.5rem;
-//            }
-//             }
-//         }
-//     }
+// tablet
+@media(max-width: 320px){
+    main{
+        margin: 0;
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
 
+        .typo{
+            display: block;
+            padding: 1rem;
 
+            .logo{
+                margin-top: 1rem;
+            }
+            
+            .hero1{
+                display: block;
+                margin-top: 3.5rem;
+                max-width: 100%;
+            }
 
-// @media(max-width: 500px){
-//     main{
-//         max-width: 50%;
-//         height: fit-content;
-//         .typo{
-//             padding: 5rem;
-//             .logo{
-//                 margin-top: -2.5rem;
-//             }
-//             input{
-                
-//             }
-//         }
-//     }
-// }
+            .typography{
+                margin-top: 5rem;
+                padding: 1rem;
 
-// @media(max-width: 1440px){
+                h1{
+                    font-size: 3rem;
+                }
 
-// }
+                p{
+                    font-size: 1.4rem;
+                    margin-bottom: 1rem;
+                }
+            }
+            
+
+            form{
+                display: block;
+
+                input{
+                    max-width: 25rem;
+                }
+
+                button{
+                    max-width: 6rem;
+                    margin-left: -6rem;
+                }
+
+                .cor{
+                    margin-top: 5rem;
+                    margin-left: -40rem;
+                    font-size: 1.4rem;
+                }
+            
+                .error{
+                    margin-top: 2rem;
+                    margin-left: -30rem;
+                    font-size: 1.4rem;
+                    
+                }
+            
+                & img[alt="error"]{
+                    height: 20px;
+                    left: 55%;
+                    top: 10px;
+                }
+            
+            }
+        }
+
+        img[alt="ima"]{
+            display: none;
+        }
+    }
+
+}
+@media(max-width: 1440px){
+
+}

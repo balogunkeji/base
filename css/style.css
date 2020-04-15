@@ -17,14 +17,16 @@ main {
   margin: 5rem;
   background-image: url("../images/bg-pattern-desktop.svg");
   box-shadow: 0.3rem 0.3rem 0.5rem 0.6rem #e7e7e7;
-  width: 90%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   display: flex; }
   main .typo {
     flex-grow: 1;
     padding: 9rem; }
     main .typo .logo {
       margin-top: -5.5rem; }
+    main .typo .hero1 {
+      display: none; }
     main .typo form {
       display: flex;
       position: relative; }
@@ -49,22 +51,74 @@ main {
         main .typo form button:hover {
           box-shadow: 0.3rem 0.3rem 0.5rem 0.6rem #ce9797; }
       main .typo form .cor {
-        color: lawngreen;
+        color: red;
         display: none;
-        font-size: 1.3rem; }
+        margin-top: 5rem;
+        margin-left: -45rem;
+        font-size: 1.6rem;
+        text-transform: capitalize; }
       main .typo form .error {
-        color: #ce9797; }
+        color: #ce9797;
+        margin-top: 5rem;
+        margin-left: -45rem;
+        font-size: 1.6rem;
+        text-transform: capitalize; }
       main .typo form img[alt="error"] {
         position: absolute;
         height: 20px;
-        right: 24%;
-        top: 15px;
+        right: 22%;
+        top: 10px;
         display: none;
         color: #ce9797; }
   main img[alt="image"] {
     height: 30vh;
     flex-shrink: 1;
     flex: 1; }
+
+@media (max-width: 320px) {
+  main {
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    display: block; }
+    main .typo {
+      display: block;
+      padding: 1rem; }
+      main .typo .logo {
+        margin-top: 1rem; }
+      main .typo .hero1 {
+        display: block;
+        margin-top: 3.5rem;
+        max-width: 100%; }
+      main .typo .typography {
+        margin-top: 5rem;
+        padding: 1rem; }
+        main .typo .typography h1 {
+          font-size: 3rem; }
+        main .typo .typography p {
+          font-size: 1.4rem;
+          margin-bottom: 1rem; }
+      main .typo form {
+        display: block; }
+        main .typo form input {
+          max-width: 25rem; }
+        main .typo form button {
+          max-width: 6rem;
+          margin-left: -6rem; }
+        main .typo form .cor {
+          margin-top: 5rem;
+          margin-left: -40rem;
+          font-size: 1.4rem; }
+        main .typo form .error {
+          margin-top: 2rem;
+          margin-left: -30rem;
+          font-size: 1.4rem; }
+        main .typo form img[alt="error"] {
+          height: 20px;
+          left: 55%;
+          top: 10px; }
+    main img[alt="ima"] {
+      display: none; } }
 
 .typography {
   margin-top: 15rem; }
@@ -77,7 +131,52 @@ main {
     .typography h1 span {
       color: #ce9797; }
   .typography p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     line-height: 2rem;
     color: #ce9797;
     margin-bottom: 2rem; }
+
+@media (max-width: 320px) {
+  main {
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    display: block; }
+    main .typo {
+      display: block;
+      padding: 1rem; }
+      main .typo .logo {
+        margin-top: 1rem; }
+      main .typo .hero1 {
+        display: block;
+        margin-top: 3.5rem;
+        max-width: 100%; }
+      main .typo .typography {
+        margin-top: 5rem;
+        padding: 1rem; }
+        main .typo .typography h1 {
+          font-size: 3rem; }
+        main .typo .typography p {
+          font-size: 1.4rem;
+          margin-bottom: 1rem; }
+      main .typo form {
+        display: block; }
+        main .typo form input {
+          max-width: 25rem; }
+        main .typo form button {
+          max-width: 6rem;
+          margin-left: -6rem; }
+        main .typo form .cor {
+          margin-top: 5rem;
+          margin-left: -40rem;
+          font-size: 1.4rem; }
+        main .typo form .error {
+          margin-top: 2rem;
+          margin-left: -30rem;
+          font-size: 1.4rem; }
+        main .typo form img[alt="error"] {
+          height: 20px;
+          left: 55%;
+          top: 10px; }
+    main img[alt="ima"] {
+      display: none; } }
